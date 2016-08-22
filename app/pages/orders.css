@@ -8,3 +8,7 @@ input {
 button {
   display: flex;
 }
+
+.orderDispItem {
+  display: inline-flex;
+}
