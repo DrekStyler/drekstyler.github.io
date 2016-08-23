@@ -1,9 +1,63 @@
-.jumbotron {
-  background: url('../media/background.jpeg');
-  width:1000px;
-  height:500px;
+* {
+
+
 }
 
+body {
+  background: url('../media/sandwich.jpg');
+  width:100%;
+  background-size: 1300px;
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+  display: block;
+  clear:both;
+  width: 1000px;
+  background-color: #F7F6F2;
+  opacity: .75;
+  margin-left:10%;
+  margin-bottom: 40px;
+}
 section {
+  padding: 30px;
+  display: inline-flex;
+  color:#ECF7F0;
+  border: 3px white solid;
+  background: gray;
+  opacity: .9;
+}
+
+.sections {
+  font-size: 1.3rem;
+
+  display: inline-flex;
+  width: 90%;
+  height:250px;
+  margin: 20px;
   padding: 20px;
+  opacity: 1;
+}
+
+button {
+  width:150px;
+  font-size: 2rem;
+  margin-left: 42%;
+  background-color: #51CD68;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  border: gray 2px solid;
+  opacity: .6;
+  font-size: 1.8rem;
+}
+
+footer{
+  text-align: center;
 }

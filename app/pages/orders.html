@@ -6,23 +6,29 @@
     <link rel="stylesheet" type="text/css" href="orders.css">
   </head>
   <body>
-    <div class="menu">
-      <div>Menu</div>
-      <div id='menuWindow'>Menu Items</div>
-    </div>
-    <form>
-    Quantity<input id="quantity" value = 1 type="number"><br>
-    <button id="addItem">Add Item</button>
+    <header>Menu</header>
 
-      Name: <input class="orderForm" id="name" type="text"><br>
-      Phone Number: <input class="orderForm" id="phoneNum" type="text"><br>
-      Address: <input class="orderForm" id="Address" type="text"><br>
+    <div class="menu">
+
+      <div id='menuWindow'>Menu Items</div>
+      <section id="orderDisp">Your food here...</section><br>
+    </div>
+    <div class='first'>
+      <div>Quantity</div>
+      <input id="quantity" value = 1 type="number"><br>
+    <button id="addItem">Add Item</button>
+  </div>
+    <form>
+      <label>Name:</label> <br><input class="orderForm" id="name" type="text"><br>
+      <label>Phone Number:</label> <br><input class="orderForm" id="phoneNum" type="text"><br>
+      <label>Address:</label> <br><input class="orderForm" id="address" type="text"><br>
       <button id="deliver" type="sumbit">Deliver My Food</button>
 
     </form>
-    <section id="orderDisp">Your food here...</section>
+
     <footer>Deli Dash</footer>
     <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
     <script src="./orders.js"></script>
+
   </body>
 </html>
