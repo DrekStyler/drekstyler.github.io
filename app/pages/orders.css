@@ -1,14 +1,107 @@
 * {
-  padding: 5px;
+  padding: 6px;
+  /*border: 1px solid black;*/
+  font-family: Serif;
 }
 input {
-  padding: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  width:200px;
+  min-width: 200px;
+  font-size: 1.1rem;
+  text-align: center;
+  height: auto;
 }
 
 button {
   display: flex;
+  background:#ef4e42;
+  font-size: 1.2rem;
+  border: 1px white solid;
+  padding: 3px;
+
 }
 
-.orderDispItem {
+form {
+  margin: 20px;
+}
+
+
+#orderDisp {
+  display: block;
+  width: 500px;
+  height: 180px;
+  margin-left: 50px;
+  font-size: 1.3rem;
+  color: white;
+  margin:15px;
+  overflow: auto;
+  border: 1px white solid;
+}
+
+.menuItem {
+  width: 300px;
+
+}
+
+header{
+  display: flex;
+  font-size: 4rem;
+  padding-left: 550px;
+  border-bottom: 3px solid;
+  background: #FFFDFA;
+  text-align: center;
+  text-decoration: underline;
+  opacity: .9;
+}
+
+  footer {
+    display: flex;
+    font-size: 1.2rem;
+    padding-left: 550px;
+    border-bottom: 3px solid;
+    background: #FFFDFA;
+    text-align: center;
+    text-decoration: underline;
+    opacity: .9;
+  }
+
+
+
+  /*margin-left: 30%;*/
+
+
+#menuWindow {
+  display: block;;
+  color: white;
+  font-size: 1.8rem;
+  width: 300px;
+  margin-left: 30px;
+}
+
+body {
+  background-color: white;
+  background: url(../../media/burrito.jpeg)
+}
+
+.first {
+  color: white;
+  background: gray;
+  display: inline-flex;
+  font-size: 1.5rem;
+  border: 1px solid;
+  margin-left: 33%;
+
+}
+.itemVal {
+  left:20px;
+}
+
+label {
+  color:white;
+  border-bottom: 2px solid white;
+}
+
+.menu {
   display: inline-flex;
 }

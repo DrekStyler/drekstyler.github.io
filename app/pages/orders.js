@@ -7,6 +7,7 @@
   let id;
   let shoppingCart = [];
   let total = 0;
+  let custInfo = [];
 
   $.get( "https://galvanize-eats-api.herokuapp.com/menu", function( data ) {
     storeData(data);
@@ -70,10 +71,10 @@ $('#addItem').on('click',(function () {
   event.preventDefault();
   $('#orderDisp').empty()
   shoppingCart.forEach((item) => {
-    $('#orderDisp').append('<div class="orderDispItem">' + item[0] + " x" + item[1] +'<div class="itemVal">' + "  $" + item[3] + '</div>' + '</div>')
+    $('#orderDisp').append('<div class="orderDispItem">' + item[0] + " x" + item[1] + "  $" + item[3] + '</div>')
     console.log(item);
   })
-
+    $('#orderDisp').append('<div class="totals">' + "Total: $ " + total + '</div>')
 }))
 
 
@@ -83,7 +84,18 @@ $('#deliver').on('click', () => {
 })
 
 function checkout () {
-  console.log('shoppingCart',shoppingCart);
+  custInfo.push($('#name').val())
+  custInfo.push($('#phoneNum').val())
+  custInfo.push($('#address').val())
+
+  custInfo.push(shoppingCart)
+  $.post('https://galvanize-eats-api.herokuapp.com/orders', function (custInfo,status) {
+    console.log(status);
+    console.log(custInfo);
+    custInfo.length = 0 ? alert('There is nothing in your Cart!') :
+    alert('Thank You For Your Order!')
+  })
+  console.log('shoppingCart',custInfo);
 }
 //access the price using the unique ID and prepare to sum
 
