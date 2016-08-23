@@ -36,7 +36,7 @@
     }
 
     function show(price,name,id) {
-      $('#menuWindow').append('<button class="menuItem" data-price='+price+' data-name='+name+'>' + name + " " + price + '</button>')
+      $('#menuWindow').append('<button class="menuItem" data-price='+price+' data-name='+name+'>' + name + " " + price + '</button><div></div>').css("margin-bottom" ,"10px")
     }
 
 function priceCalc (name,price,quantity) {
